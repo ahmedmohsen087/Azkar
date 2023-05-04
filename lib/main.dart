@@ -9,10 +9,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       home: HomeScreen(),
       theme: ThemeData(
+        appBarTheme: AppBarTheme (
+          color: Colors.purpleAccent,
+          centerTitle: true,
+          titleTextStyle: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.w600,
 
+          )
+        )
       ),
     );
   }
