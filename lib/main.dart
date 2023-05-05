@@ -13,14 +13,18 @@ class MyApp extends StatelessWidget {
       home: HomeScreen(),
       theme: ThemeData(
         appBarTheme: AppBarTheme (
-          color: Colors.purpleAccent,
+          color: Colors.greenAccent,
           centerTitle: true,
           titleTextStyle: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.w600,
 
           )
-        )
+        ),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          elevation: 2,
+        ),
+
       ),
     );
   }
