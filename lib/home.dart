@@ -2,8 +2,10 @@ import 'package:askar/row_item.dart';
 import 'package:askar/royaa_page/royaa.dart';
 import 'package:flutter/material.dart';
 
+import 'azkar_elmasaa_page/azkar_elmasaa.dart';
 import 'azkar_elsabah_page/azkar_elsabah.dart';
 import 'azkar_elsalah_page/azksr_elsalah.dart';
+import 'estakara_page/estakara.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String routeName = 'HomeScreen' ;
@@ -38,7 +40,7 @@ class HomeScreen extends StatelessWidget {
             ),
             InkWell(
                 onTap: (){
-
+                  Navigator.pushNamed(context, AzkarElMasaa.routeName);
                 },
                 child: RowItem('أذكار المساء', 'assets/images/masaa.jpeg')),
             SizedBox(
@@ -46,6 +48,7 @@ class HomeScreen extends StatelessWidget {
             ),
             InkWell(
                 onTap: (){
+                  Navigator.pushNamed(context, Estakara.routeName);
 
                 },
                 child: RowItem('صلاة الأستخارة', 'assets/images/estakara.jpeg')),

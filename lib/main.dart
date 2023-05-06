@@ -2,8 +2,10 @@ import 'package:askar/home.dart';
 import 'package:askar/royaa_page/royaa.dart';
 import 'package:flutter/material.dart';
 
+import 'azkar_elmasaa_page/azkar_elmasaa.dart';
 import 'azkar_elsabah_page/azkar_elsabah.dart';
 import 'azkar_elsalah_page/azksr_elsalah.dart';
+import 'estakara_page/estakara.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,6 +24,8 @@ class MyApp extends StatelessWidget {
         AzkarElSabah.routeName:(_)=> AzkarElSabah(),
         AzkarElSalah.routeName :(_) => AzkarElSalah(),
         Royaa.routeName:(_) => Royaa(),
+        Estakara.routeName:(_) => Estakara(),
+        AzkarElMasaa.routeName : (_) => AzkarElMasaa(),
       },
 
       theme: ThemeData(
